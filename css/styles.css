@@ -16,8 +16,11 @@
     --footor-logo-secondary-color:#FFFFFF;
     --footer-map-color: #FFFFFF;
     --footer-tel-color: rgba(255, 255, 255, 0.6);
+    --modal-background-color:#FFFFFF;
     --typical-padding: 94px;
     --icon-color: #AFB1B8;
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden:not(focus):not(active) {
@@ -79,10 +82,6 @@ img {
     margin: 0 auto;
 }
 
-.current{
-    color: var(--accent-color);
-}
-
 /*--------------------studia------------------*/
 /*--------------------header------------------*/
 
@@ -129,10 +128,29 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--font-color);
+    transition: color var(--transition-duration) 
+    var(--transition-timing-function);
+    
 }
 
 .header-link:hover, .header-link:focus{
     color: var(--accent-color);
+}
+
+.current{
+    color: var(--accent-color);
+    position: relative;
+}
+
+.current::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 0px;    
 }
 
 .header .list{
@@ -152,6 +170,8 @@ img {
     color: var(--secondary-font-color); 
     display: flex;
     align-items: center;
+    transition: color var(--transition-duration) 
+    var(--transition-timing-function);
 }
 
 .header-connection:hover, .header-connection:focus{
@@ -161,6 +181,7 @@ img {
 .mail-icon, .tel-icon{
     fill: var(--secondary-font-color);
     margin-right: 10px;
+    transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .header-connection:hover .mail-icon,
@@ -210,6 +231,7 @@ img {
     border: 0;
     display: block;
     margin: 0 auto;
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .hero-but:hover, .hero-but:focus{
@@ -351,6 +373,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .specialist-soc-link:hover,
@@ -365,6 +388,8 @@ img {
 
 .specialist-soc-icon{
     fill: var(--icon-color);
+    transition: fill var(--transition-duration) 
+    var(--transition-timing-function);
 }
 
 /* -------------------clients------------------ */
@@ -398,6 +423,8 @@ img {
     border: 1px solid var(--icon-color);
     box-sizing: border-box;
     border-radius: 4px;
+    transition: border var(--transition-duration) 
+    var(--transition-timing-function);
 }
 
 .client-link:hover,
@@ -409,6 +436,8 @@ img {
     width: 106px;
     height: 60px;
     fill: var(--icon-color);
+    transition: fill var(--transition-duration) 
+    var(--transition-timing-function);
 }
 
 .client-link:hover .client-icon,
@@ -452,10 +481,14 @@ img {
 
 .footer-map{
     color: var(--footer-map-color);
+    transition: color var(--transition-duration) 
+    var(--transition-timing-function);
 }
 
 .footer-connection{
     color: var(--footer-tel-color);
+    transition: color var(--transition-duration) 
+    var(--transition-timing-function);
 }
 
 .footer-map:hover, .footer-map:focus,
@@ -493,11 +526,13 @@ img {
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .footer-soc-link:focus,
 .footer-soc-link:hover {
-    background: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 .footer-soc-icon {
@@ -538,6 +573,10 @@ img {
     display: block;
     border-radius: 4px;
     border: 0px;
+    transition: color var(--transition-duration) 
+    var(--transition-timing-function), 
+    background-color var(--transition-duration) var(--transition-timing-function), 
+    box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
 .filter-but:hover, .filter-but:focus{
@@ -565,12 +604,39 @@ img {
     margin-top: 30px;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+    transition: box-shadow var(--transition-duration) 
+    var(--transition-timing-function);
 }
 
-.project-item:hover{
+.project-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-item:hover .project-top-text {
+    transform: translateY(0%);
+}
+.project-top-wrap{
+    position: relative;
+    overflow: hidden;
+}
+
+.project-top-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--hero-text);
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transform: translateY(100%); 
+    transition: transform var(--transition-duration) 
+    var(--transition-timing-function);
+    overflow: auto;
 }
 
 .project-aside{
@@ -591,4 +657,55 @@ img {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-font-color);
+}
+
+.backdrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity var(--transition-duration) 
+    var(--transition-timing-function), 
+    visibility var(--transition-duration) 
+    var(--transition-timing-function),;
+}
+
+.modal{
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    background: var(--modal-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-close-but{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.modal-close-icon{
+    fill: var(--header-logo-secondary-color);
+}
+
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
