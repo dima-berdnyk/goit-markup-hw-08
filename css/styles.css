@@ -309,9 +309,29 @@ img {
 .work-item{
     flex-basis: calc(100%/3-30px);
     margin-left: 30px;
+    position: relative;
 }
 
+.work-label{
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
 
+.work-label-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-text);
+}
 /*--------------------specialist------------------*/
 
 .specialist {
@@ -660,6 +680,7 @@ img {
     color: var(--secondary-font-color);
 }
 
+/*---------------modal-hero-studia---------------*/
 .backdrop{
     width: 100%;
     height: 100%;
@@ -669,7 +690,11 @@ img {
     transition: opacity var(--transition-duration) 
     var(--transition-timing-function), 
     visibility var(--transition-duration) 
-    var(--transition-timing-function),;
+    var(--transition-timing-function);
+}
+
+.backdrop.is-hidden .modal{
+    transform: scale(0.8);
 }
 
 .modal{
@@ -683,7 +708,9 @@ img {
     border-radius: 4px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--transition-duration) var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal-close-but{
