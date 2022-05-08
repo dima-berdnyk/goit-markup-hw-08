@@ -565,7 +565,7 @@ img {
 
 .footer-subscription {
     position: absolute;
-    right: 0;
+    right: 15px;
     width: 570px;
     height: 86px;
 }
