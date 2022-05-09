@@ -799,7 +799,7 @@ img {
 }
 
 .modal-close-icon {
-    fill: var(--icon-color);
+    fill: var(--header-logo-secondary-color);
     transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -890,6 +890,14 @@ img {
     border-color: var(--accent-color);
 }
 
+.modal-checkbox {
+    margin-bottom: 30px;
+}
+
+.visually-hidden {
+    display: none;
+}
+
 .check-text {
     font-weight: 400;
     font-size: 14px;
@@ -898,7 +906,7 @@ img {
     color: var(--secondary-font-color);
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: center;
 }
 
 .modal-chekbox-link {
