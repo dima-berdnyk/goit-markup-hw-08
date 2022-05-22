@@ -1,0 +1,76 @@
+.specialist {
+    background-color: var(--specialist-section-background-color);
+    padding-top: var(--typical-padding);
+    padding-bottom: var(--typical-padding);
+}
+
+.specialist__list {
+    display: flex;
+    margin-left: -30px;
+}
+
+.specialist__item {
+    background-color: var(--specialist-item-background-color);
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.specialist__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.specialist__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.specialist__profession {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--secondary-font-color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-list__item+.social-list__item {
+    margin-left: 10px;
+}
+
+.social-list__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+    fill: #ffffff;
+}
+
+.social-list__icon {
+    fill: var(--icon-color);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+}
