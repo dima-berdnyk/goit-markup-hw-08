@@ -1,0 +1,28 @@
+.header .list {
+    display: flex;
+    margin-left: auto;
+}
+
+.menu-list {
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--font-color);
+        transition: color var(--transition-duration) var(--transition-timing-function);
+        padding-bottom: 32px;
+        padding-top: 32px;
+
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+    }
+}

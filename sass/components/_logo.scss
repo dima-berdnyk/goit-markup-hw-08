@@ -4,19 +4,21 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    &__header{
+        margin-right: 94px;
+    }
+
+    &__primary {
+        color: var(--accent-color);
+    }
+
+    &__secondary-header {
+        color: var(--header-logo-secondary-color);
+    }
+
+    &__secondary-footer {
+        color: var(--footor-logo-secondary-color);
+    }
 }
 
-.header-logo {
-    margin-right: 94px;
-}
-
-.logo__primary {
-    color: var(--accent-color);
-}
-.logo--header {
-    color: var(--header-logo-secondary-color);
-}
-
-.logo--footer {
-    color: var(--footor-logo-secondary-color);
-}

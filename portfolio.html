@@ -24,9 +24,9 @@
     <!-- header -->
     <header class="header">
       <div class="container">
-        <a href="/" class="logo header-logo link"
+        <a href="/" class="logo logo__header link"
           ><span class="logo__primary">Web</span
-          ><span class="logo__secondary logo--header">Studio</span></a
+          ><span class="logo__secondary-header">Studio</span></a
         >
         <nav class="navigation">
           <ul class="menu-list list">
@@ -43,18 +43,18 @@
             </li>
           </ul>
         </nav>
-        <ul class="list">
-          <li class="menu-list__item">
-            <a href="mailto:info@devstudio.com" class="menu-list__connection link">
-              <svg class="mail-icon" width="16" height="12">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link link">
+              <svg class="contacts__mail-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="menu-list__item">
-            <a href="tel:+380961111111" class="menu-list__connection link">
-              <svg class="tel-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link link">
+              <svg class="contacts__tel-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11</a
@@ -65,7 +65,7 @@
     </header>
     <main>
       <section class="portfolio">
-        <div class="container">
+        <div class="container filter">
           <h1 class="visually-hidden">Портфолио</h1>
           <!-- filter -->
           <ul class="filter-list list">
@@ -86,7 +86,7 @@
             </li>
           </ul>
           <!-- project -->
-          <ul class="project-list list">
+          <ul class="project list">
             <li class="project-item">
               <div class="project-top-wrap">
                 <img
@@ -268,7 +268,7 @@
         <div class="footer__address">
           <a href="/" class="logo header-logo link"
             ><span class="logo__primary">Web</span
-            ><span class="logo__secondary logo--footer">Studio</span></a
+            ><span class="logo__secondary-footer">Studio</span></a
           >
           <address class="address">
             <ul class="address__list list">
@@ -327,19 +327,19 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscription">
-          <h3 class="footer-subscription__title">Подпишитесь на рассылку</h3>
-          <form class="footer-subscription__form">
+        <div class="subscription">
+          <h3 class="subscription__title">Подпишитесь на рассылку</h3>
+          <form class="subscription__form">
             <input
               type="email"
               name="email"
-              class="footer-subscription__input"
+              class="subscription__email-input"
               placeholder="E-mail"
               required
             />
             <div class="subscription-wrap">
-              <button type="submit" class="subscription-but">Подписаться</button>
-              <svg class="footer-subscription__icon" width="24" height="24">
+              <button type="submit" class="subscription__but">Подписаться</button>
+              <svg class="subscription__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </div>

@@ -1,18 +1,27 @@
 @import"./base/reset";
+@import"./base/container";
+@import"./base/section-title";
 
 @import"./components/logo";
 @import"./components/current";
 @import"./components/header";
+@import"./components/header-menu";
 @import"./components/hero";
 @import"./components/modal-hero-studia";
 @import"./components/skills";
 @import"./components/products";
 @import"./components/specialist";
+@import"./components/social-list";
 @import"./components/clients";
 @import"./components/footer";
+@import"./components/footer-soc";
 @import"./components/portfolio";
 @import"./components/portfolio-filter";
 @import"./components/portfolio-project";
+@import"./components/address";
+@import"./components/subscription";
+@import"./components/contacts";
+@import"./components/backdrop";
 
 @import"./utils/variables";
 @import"./utils/visually-hidden";

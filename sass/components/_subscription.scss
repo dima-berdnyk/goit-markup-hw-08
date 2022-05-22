@@ -1,0 +1,72 @@
+.subscription {
+    position: absolute;
+    right: 15px;
+    width: 570px;
+    height: 86px;
+}
+
+.subscription__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-text);
+    margin-bottom: 20px;
+}
+
+.subscription__form {
+    display: flex;
+    align-items: center;
+}
+
+.subscription__email-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: inherit;
+    color: var(--hero-text);
+    border-radius: 4px;
+    padding-left: 16px;
+    margin-right: 12px;
+    outline: none;
+    transition: border-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.subscription__email-input:focus {
+    border-color: var(--accent-color);
+}
+
+.subscription-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.subscription__but {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: var(--hero-text);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 62px 10px 29px;
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.subscription__but:hover,
+.subscription__but:focus {
+    background-color: var(--hero-but-background-color);
+}
+
+.subscription__icon {
+    fill: var(--hero-text);
+    position: absolute;
+    left: 148px;
+    top: 13px;
+}

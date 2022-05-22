@@ -10,38 +10,38 @@
     margin: 0 auto;
     max-width: 1600px;
     min-height: 480px;
-}
 
-.hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    color: var(--hero-text);
-    text-transform: uppercase;
-    text-align: center;
-    width: 696px;
-    margin: 0 auto 30px auto;
-}
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        color: var(--hero-text);
+        text-transform: uppercase;
+        text-align: center;
+        width: 696px;
+        margin: 0 auto 30px auto;
+    }
 
-.hero__but {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--hero-text);
-    background-color: var(--accent-color);
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: 0;
-    display: block;
-    margin: 0 auto;
-    transition: background-color var(--transition-duration) var(--transition-timing-function);
-}
+    &__but {
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: var(--hero-text);
+        background-color: var(--accent-color);
+        padding: 10px 32px;
+        border-radius: 4px;
+        border: 0;
+        display: block;
+        margin: 0 auto;
+        transition: background-color var(--transition-duration) var(--transition-timing-function);
 
-.hero__but:hover,
-.hero__but:focus {
-    background-color: var(--hero-but-background-color);
-    cursor: pointer;
+            &:hover,
+            &:focus {
+                background-color: var(--hero-but-background-color);
+                cursor: pointer;
+            }
+    }
 }

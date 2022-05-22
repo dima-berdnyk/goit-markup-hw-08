@@ -24,9 +24,9 @@
     <!-- header -->
     <header class="header">
       <div class="container">
-        <a href="/" class="logo header-logo link"
+        <a href="/" class="logo logo__header link"
           ><span class="logo__primary">Web</span
-          ><span class="logo__secondary logo--header">Studio</span></a
+          ><span class="logo__secondary-header">Studio</span></a
         >
         <nav class="navigation">
           <ul class="menu-list list">
@@ -41,18 +41,18 @@
             </li>
           </ul>
         </nav>
-        <ul class="list">
-          <li class="menu-list__item">
-            <a href="mailto:info@devstudio.com" class="menu-list__connection link">
-              <svg class="mail-icon" width="16" height="12">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link link">
+              <svg class="contacts__mail-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="menu-list__item">
-            <a href="tel:+380961111111" class="menu-list__connection link">
-              <svg class="tel-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link link">
+              <svg class="contacts__tel-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11</a
@@ -316,10 +316,10 @@
         </div>
       </section>
       <!--clients-->
-      <section class="clients">
+      <section class="client">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="clients__list list">
+          <ul class="client__list list">
             <li class="client__item">
               <a href="" class="client__link">
                 <svg class="client__icon" width="106" height="60">
@@ -372,7 +372,7 @@
         <div class="footer__address">
           <a href="/" class="logo header-logo link"
             ><span class="logo__primary">Web</span
-            ><span class="logo__secondary logo--footer">Studio</span></a
+            ><span class="logo__secondary-footer">Studio</span></a
           >
           <address class="address">
             <ul class="address__list list">
@@ -431,19 +431,19 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscription">
-          <h3 class="footer-subscription__title">Подпишитесь на рассылку</h3>
-          <form class="footer-subscription__form">
+        <div class="subscription">
+          <h3 class="subscription__title">Подпишитесь на рассылку</h3>
+          <form class="subscription__form">
             <input
               type="email"
               name="email"
-              class="footer-subscription__input"
+              class="subscription__email-input"
               placeholder="E-mail"
               required
             />
             <div class="subscription-wrap">
-              <button type="submit" class="subscription-but">Подписаться</button>
-              <svg class="footer-subscription__icon" width="24" height="24">
+              <button type="submit" class="subscription__but">Подписаться</button>
+              <svg class="subscription__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </div>
@@ -510,20 +510,20 @@
               name="Комментарий"
               rows="10"
               placeholder="Введите текст"
-              class="modal-textarea"
+              class="textarea__text"
             ></textarea>
           </div>
           <div class="modal-checkbox">
             <input
               type="checkbox"
-              class="input-check visually-hidden"
-              id="input-check"
+              class="modal-chekbox__check visually-hidden"
+              id="modal-chekbox__check"
               name="policy"
               value="policy"
             />
-            <label for="input-check" class="check-text"
+            <label for="modal-chekbox__check" class="modal-chekbox__text"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="modal-chekbox-link"> Условия договора</a></label
+              <a href="" class="modal-chekbox__link"> Условия договора</a></label
             >
           </div>
           <button type="submit" class="modal-but">Отправить</button>

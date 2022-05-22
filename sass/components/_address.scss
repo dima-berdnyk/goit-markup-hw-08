@@ -1,0 +1,35 @@
+.address {
+    width: 231px;
+    margin-top: 20px;
+    margin-right: 70px;
+
+    &__list {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__map {
+        color: var(--footer-map-color);
+        transition: color var(--transition-duration) var(--transition-timing-function);
+            &:hover,
+            &:focus{
+                color: var(--accent-color);
+            }
+    }
+
+    &__connection {
+        color: var(--footer-tel-color);
+        transition: color var(--transition-duration) var(--transition-timing-function);
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+    }
+}
