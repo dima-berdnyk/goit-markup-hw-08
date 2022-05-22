@@ -292,7 +292,7 @@ img {
 .modal-checkbox__link {
   color: var(--accent-color);
 }
-.modal-checkbox .modal-chekbox__text::before {
+.modal-checkbox__text::before {
   content: "";
   width: 16px;
   height: 15px;
@@ -300,7 +300,7 @@ img {
   border-radius: 3px;
   margin-right: 5px;
 }
-.modal-checkbox .modal-chekbox__check:checked + .modal-chekbox__text::before {
+.modal-checkbox__check:checked + .modal-checkbox__text::before {
   background-color: var(--accent-color);
   border: none;
   background-image: url(../images/icon-check.svg);
