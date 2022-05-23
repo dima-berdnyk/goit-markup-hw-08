@@ -152,7 +152,7 @@
         margin-right: 5px;
     }
 
-    &__check:checked+&__text::before {
+    .modal-checkbox__check:checked + .modal-checkbox__text::before {
         background-color: var(--accent-color);
         border: none;
         background-image: url(../images/icon-check.svg);
