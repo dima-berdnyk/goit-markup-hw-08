@@ -1,17 +1,29 @@
 .project {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-
-    &-item {
-        width: 370px;
-        background: var(--project-item-background-color);
-        flex-basis: calc(100% / 3 - 30px);
-        margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: -30px;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 30px;
+        margin-right: -30px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-top: 50px;
+    }
+    
+    &-item {
+        background: var(--project-item-background-color);
         border: 1px solid #eeeeee;
         box-sizing: border-box;
         transition: box-shadow var(--transition-duration) var(--transition-timing-function);
+        margin-bottom: 30px;
+        @media screen and (min-width: 768px){
+            width: calc(100% / 2 - 30px);
+            margin-right: 30px;
+        }
+        @media screen and (min-width: 1200px){
+            width: calc(100% / 3 - 30px);
+        }
     
         &:hover {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
