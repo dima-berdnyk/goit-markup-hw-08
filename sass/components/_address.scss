@@ -1,6 +1,9 @@
 .address {
     max-width: 232px;
     margin-top: 20px;
+    @media screen and (min-width: 1200px){
+        
+    }
     // margin-right: 70px;
 
     &__list {

@@ -1,5 +1,14 @@
 .footer-soc {
-    max-width: 206px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 206px;
+    @media screen and (min-width: 768px){
+        padding: 0; 
+    }
+    @media screen and (min-width: 1200px){
+        margin-left: 70px;
+        margin-right: 93px;
+    }
 
     &__title {
         font-size: 14px;
@@ -9,6 +18,9 @@
         text-transform: uppercase;
         margin-bottom: 20px;
         color: var(--footer-map-color);
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     }
 
     &__list {

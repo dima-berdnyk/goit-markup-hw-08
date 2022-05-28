@@ -435,6 +435,7 @@ img {
 @media screen and (min-width: 1200px) {
   .products {
     display: block;
+    padding-bottom: 94px;
   }
 }
 .products__list {
@@ -593,19 +594,51 @@ img {
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0 auto;
 }
 .footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
 .footer__address {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-right: 0;
+    text-align: left;
+  }
+}
 
 .footer-soc {
-  max-width: 206px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 206px;
+}
+@media screen and (min-width: 768px) {
+  .footer-soc {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 .footer-soc__title {
   font-size: 14px;
@@ -615,6 +648,11 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--footer-map-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc__title {
+    text-align: left;
+  }
 }
 .footer-soc__list {
   display: flex;
@@ -769,6 +807,17 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .subscription {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-top: 0;
+  }
+}
+
 .subscription__title {
   font-weight: 700;
   font-size: 14px;
@@ -779,11 +828,21 @@ img {
   color: var(--hero-text);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .subscription__title {
+    text-align: left;
+  }
+}
 
 .subscription__form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__form {
+    flex-direction: row;
+  }
 }
 
 .subscription__email-input {
@@ -807,6 +866,8 @@ img {
 @media screen and (min-width: 1200px) {
   .subscription__email-input {
     width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 
