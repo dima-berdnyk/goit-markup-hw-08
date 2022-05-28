@@ -1,0 +1,30 @@
+.mob-menu{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-color: ;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+.menu-close-btn {
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    
+        &__icon {
+        fill: var(--icon-modal-color);
+        transition: fill var(--transition-duration) var(--transition-timing-function);
+
+        .menu-close-btn:hover &,
+        .menu-close-btn:focus & {
+            fill: var(--accent-color);
+        }
+    }
+}
+

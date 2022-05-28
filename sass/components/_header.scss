@@ -7,5 +7,24 @@
     & .container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 }
+
+.menu-open-btn {
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    
+    &__icon {
+        fill: var(--icon-modal-color);
+        transition: fill var(--transition-duration) var(--transition-timing-function);
+    
+        .menu-open-btn:hover &,
+        .menu-open-btn:focus & {
+            fill: var(--accent-color);
+        }
+    }
+}
+
