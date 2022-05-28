@@ -1,4 +1,8 @@
 .products {
+    display: none;
+    @media screen and (min-width: 1200px){
+        display: block;
+    }
     padding-top: var(--typical-padding);
     padding-bottom: var(--typical-padding);
 

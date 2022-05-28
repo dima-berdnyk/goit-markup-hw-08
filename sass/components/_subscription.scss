@@ -1,8 +1,8 @@
 .subscription {
-    position: absolute;
-    right: 15px;
-    width: 570px;
-    height: 86px;
+    // position: absolute;
+    // right: 15px;
+    // width: 570px;
+    // height: 86px;
 }
 
 .subscription__title {
@@ -10,6 +10,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--hero-text);
     margin-bottom: 20px;
@@ -17,11 +18,12 @@
 
 .subscription__form {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .subscription__email-input {
-    width: 358px;
+    width: 75vw;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -29,9 +31,17 @@
     color: var(--hero-text);
     border-radius: 4px;
     padding-left: 16px;
-    margin-right: 12px;
+    // margin-right: 12px;
     outline: none;
     transition: border-color var(--transition-duration) var(--transition-timing-function);
+    margin-bottom: 20px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
 .subscription__email-input:focus {
@@ -48,6 +58,7 @@
     height: 50px;
     font-weight: 700;
     font-size: 16px;
+    line-height: 1.18;
     letter-spacing: 0.06em;
     color: var(--hero-text);
     background: var(--accent-color);
