@@ -1,38 +1,67 @@
-.contacts{
-    display: none;
-    &__item:not(:last-child) {
-        margin-right: 50px;
+@media screen and (max-width: 767px) {
+    .contacts {
+        display: none;
     }
+}
 
-    &__link+&__link {
-        margin-left: 50px;
-    }
-
-    &__link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--secondary-font-color);
-        display: flex;
-        align-items: center;
-        transition: color var(--transition-duration) var(--transition-timing-function);
-            &:hover,
-            &:focus {
-                color: var(--accent-color);
+@media screen and (min-width: 768px){
+    .contacts{
+        margin-left: 84px;
+        &__item:not(:last-child) {
+                margin-bottom: 12px;
             }
-    }
 
-    &__mail-icon,
-    &__tel-icon {
-        fill: var(--secondary-font-color);
-        margin-right: 10px;
-        transition: fill var(--transition-duration) var(--transition-timing-function);
+        &__link {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.02em;
+            color: var(--secondary-font-color);
+            display: flex;
+            align-items: center;
+            transition: color var(--transition-duration) var(--transition-timing-function);
+                &:hover,
+                &:focus {
+                    color: var(--accent-color);
+                }
+        }
 
-        .contacts__link:hover &,
-        .contacts__link:focus & {
-            fill: var(--accent-color);
+        &__mail-icon,
+        &__tel-icon {
+            fill: var(--secondary-font-color);
+            margin-right: 10px;
+            transition: fill var(--transition-duration) var(--transition-timing-function);
+
+            .contacts__link:hover &,
+            .contacts__link:focus & {
+                fill: var(--accent-color);
+            }
         }
     }
 }
 
+@media screen and (min-width: 1200px){
+    .contacts{
+        display: flex;
+        margin-left: auto;
+
+        &__item:not(:last-child) {
+            margin-right: 50px;
+            margin-bottom: 0;
+        }
+
+        &__link+&__link {
+            margin-left: 50px;
+        }
+
+        &__link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: var(--secondary-font-color);
+            display: flex;
+            align-items: center;
+        }
+    }
+}

@@ -9,9 +9,7 @@
         line-height: 1.19;
     }
 
-    // &__header{
-    //     margin-right: 94px;
-    // }
+    // 
 
     &__primary {
         color: var(--accent-color);
@@ -23,6 +21,18 @@
 
     &__secondary-footer {
         color: var(--footor-logo-secondary-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo__header {
+        margin-right: 88px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo__header {
+        margin-right: 94px;
     }
 }
 
