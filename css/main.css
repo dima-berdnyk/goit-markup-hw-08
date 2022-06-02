@@ -292,6 +292,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
+  max-height: 100%;
+  overflow: auto;
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1037,6 +1039,14 @@ img {
   .contacts__link:hover, .contacts__link:focus {
     color: var(--accent-color);
   }
+  .contacts__mail-icon {
+    width: 14px;
+    height: 10px;
+  }
+  .contacts__tel-icon {
+    width: 10px;
+    height: 14px;
+  }
   .contacts__mail-icon, .contacts__tel-icon {
     fill: var(--secondary-font-color);
     margin-right: 10px;
@@ -1062,6 +1072,14 @@ img {
     font-size: 14px;
     line-height: 1.14;
   }
+  .contacts__mail-icon {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts__tel-icon {
+    width: 10px;
+    height: 16px;
+  }
 }
 .backdrop {
   width: 100%;
@@ -1073,6 +1091,11 @@ img {
 }
 .backdrop.is-hidden .modal {
   transform: scale(0.8);
+}
+@media screen and (orientation: landscape) {
+  .backdrop {
+    overflow-y: auto;
+  }
 }
 
 .mob-menu {
