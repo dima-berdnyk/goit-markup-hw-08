@@ -171,7 +171,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--font-color);
     transition: color var(--transition-duration) var(--transition-timing-function);
-    padding-bottom: 32px;
+    padding-bottom: 37px;
     padding-top: 32px;
   }
   .menu-list__link:hover, .menu-list__link:focus {
@@ -190,6 +190,11 @@ img {
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-list__link {
+    padding-bottom: 32px;
   }
 }
 .hero {
